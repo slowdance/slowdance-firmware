@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 
 """
+©2017 Wonder Machines
+
 Calculates samples from a pulse density modulation approximation of a specified
 waveform and then generates a C header file containing these samples (waveform.h).
 

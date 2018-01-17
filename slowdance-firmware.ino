@@ -1,3 +1,10 @@
+// ©2017 Wonder Machines
+
+// Authored by
+// - Josh Gordonson
+// - Owen Trueblood
+// - Jeff Lieberman
+
 #include <math.h>
 #include "avr/pgmspace.h"
 

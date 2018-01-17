@@ -1,3 +1,5 @@
+// ©2017 Wonder Machines
+
 #ifndef H_UTIL
 #define H_UTIL
 
