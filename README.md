@@ -26,3 +26,7 @@ Build the firmware using the "Sketch" -> "Export compiled Binary" option in the 
 avrdude -c usbtiny -p atmega328p -U flash:w:slowdance.ino.with_bootloader.standard.hex -U lfuse:w:0xff:m -U hfuse:w:0xde:m -U efuse:w:0x05:m
 ```
 
+## Original Firmware
+
+If for any reason you want to revert to the factory-shipped firmware you can find that [here](https://github.com/slowdance/slowdance-firmware/releases/tag/v1.0.0).
+
