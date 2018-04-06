@@ -52,7 +52,7 @@ def approximate_squarewave(order):
     by summing odd harmonics to the given order
     """
     is_odd = lambda x: x % 2 == 1
-    harmonic_orders = filter(is_odd, range(0, order + 1))
+    harmonic_orders = list(filter(is_odd, range(0, order + 1)))
 
     return lambda angle: sum([math.sin(n * angle) / n for n in harmonic_orders])
 
@@ -134,8 +134,8 @@ def main():
         if sys.argv[1] in WAVEFORMS:
             func = WAVEFORMS[sys.argv[1]]
         else:
-            print "Unrecognized waveform name"
-            print "Options are:", WAVEFORMS.keys()
+            print("Unrecognized waveform name")
+            print("Options are:", WAVEFORMS.keys())
             exit(1)
 
     # Calculate the PDM samples from the given waveform function
