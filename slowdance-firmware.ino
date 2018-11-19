@@ -264,7 +264,7 @@ void setup() {
   DIDR0 = (1 << ADC1D); // Disable digital input buffer for the analog (brightness) input
 
   // Setup ADC
-  ADMUX = (1 << REFS0) | (0 << ADLAR) | (1 << MUX0); // VCC/5v ref, right adjust, connect ADC0
+  ADMUX = (1 << REFS0) | (0 << ADLAR) | (1 << MUX0); // VCC/5v ref, right adjust, connect ADC1
   ADCSRA = (1 << ADEN) | (1 << ADSC) | (1 << ADPS1) | (1 << ADPS0); // ADC clock: clk/8, enable
 
   // Start with light off
